@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;800&display=swap');
+html{
+    font-family:"Barlow Semi Condensed";
+    background-color: hsl(210, 46%, 95%);
+}
+.container{       
+    margin: 40px;
+    display: grid;    
+    grid-gap: 10px;
+    font-size: 13px;
+    grid-template-columns: repeat(5,1fr);
+    grid: "top1 top1 top1 top2 right"
+          "footer1 footer2 footer2 footer2 right";
+}
+.photo{
+    display: flex;
+    flex-direction: row;  
+    z-index: 1;  
+}
+h1{
+    margin: 20px 0;
+    z-index: 1;
+}
+.name{
+    margin: 10px;
+    margin-left: 20px;    
+}
+.claro{
+    opacity: 50%;
+    font-weight: 600;
+    margin-top: 2px;
+}
+.content{
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    margin: 10px;
+    border-radius: 10px;
+    color:hsl(0, 0%, 100%);
+    padding: 30px;       
+}
+.top1{    
+    background-color: hsl(263, 55%, 52%);
+    grid-area: top1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.top1 .photo1{
+    border:3px solid hsl(263, 54%, 70%);      
+}
+.top2{
+    background-color: hsl(217, 19%, 35%);
+    display: flex;
+    flex-direction: column;
+    grid-area: top2;
+}
+.right{
+    grid-area: right;
+    background-color: hsl(0, 0%, 100%);
+    color:hsl(217, 19%, 35%);
+}
+.footer1 {
+    color:hsl(217, 19%, 35%);
+    background-color: hsl(0, 0%, 100%);
+    grid-area: footer1;
+}
+.footer2{
+    background-color: hsl(219, 29%, 14%);
+    grid-area: footer2;    
+}
+.footer2 img{
+    border:3px solid hsl(263, 55%, 52%);   
+}
+img{   
+    border-radius: 50%;    
+}
+.quotation{
+    border-radius: 0;
+    position: absolute;
+    right: 15%;
+    height: 140px;
+    top:0;
+    z-index: 0;
+}

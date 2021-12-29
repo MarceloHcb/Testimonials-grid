@@ -1,0 +1,28 @@
+@media(max-width: 980px){
+    .container{
+        grid-gap:0;
+        margin: 5px;    
+    }
+  h1{
+      font-size: 20px;
+  }
+  .quotation{      
+      opacity: 0.5;
+  }
+}
+@media(max-width: 850px){
+   .container{ grid:"top1 top2"
+                    "footer1 footer2"
+                    "right ."
+
+   }
+}
+@media(max-width: 550px){
+  .container{
+      grid:"top1 top1"
+            "top2 top2"
+            "footer1 footer1"
+            "footer2 footer2"
+            "right right";            
+  }
+}
